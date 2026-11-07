@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahari Online Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>💊 Lahari Online Pharmacy</h1>
+    <p>Online Pharmacy Management System</p>
+</header>
+
+<nav>
+    <button onclick="showTable('users')">Users</button>
+    <button onclick="showTable('medicines')">Medicines</button>
+    <button onclick="showTable('orders')">Orders</button>
+    <button onclick="showTable('order_items')">Order Items</button>
+</nav>
+
+<main>
+    <section class="welcome">
+        <h2>Welcome to Lahari Pharmacy</h2>
+        <p>Manage customers, medicines, stock and pharmacy orders.</p>
+    </section>
+
+    <section class="management">
+        <h2 id="tableTitle">Medicine Management</h2>
+
+        <form id="dataForm">
+            <div id="formFields"></div>
+            <button type="submit" id="saveButton">Add Record</button>
+            <button type="button" onclick="resetForm()" class="reset">
+                Clear
+            </button>
+        </form>
+
+        <h2>Records</h2>
+        <div class="table-container">
+            <table>
+                <thead id="tableHead"></thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Lahari Online Pharmacy Management System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
